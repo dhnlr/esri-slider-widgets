@@ -1,0 +1,20 @@
+{
+  "name": "esri-slider-widgets",
+  "version": "0.0.1",
+  "description": "Portal Gallery\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[CArcGIS portal gallery slider for Apostrophe CMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apostrophe",
+    "apostrophecms",
+    "apostrophe-cms",
+    "arcgis",
+    "esri",
+    "portal gallery",
+    "esri portal gallery"
+  ],
+  "author": "DHNLR",
+  "license": "MIT"
+}

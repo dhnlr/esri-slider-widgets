@@ -1,0 +1,26 @@
+<style>
+  .portalgallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+</style>
+{% set w = data.widget %} {% set q = data.arcgis %}
+<div class="portalgallery">
+  {% for arcgis in data.arcgis %}
+  <div>
+    <img
+      src="https://essclombok.maps.arcgis.com/sharing/rest/content/items/{{
+        arcgis.id
+      }}/info/{{ arcgis.thumbnail }}"
+      alt="{{ arcgis.title }}"
+      width="200px"
+    />
+    <h2>
+      <a href="{{ arcgis.url }}" target="_blank">{{ arcgis.title }}</a>
+    </h2>
+  </div>
+  {% else %}
+  <p>Loading data</p>
+  {% endfor %}
+</div>
