@@ -1,6 +1,6 @@
 # Esri Slider Widget
 
-:earth_asia: Esri slider widgets is Apostrophe CMS module to show Esri ArcGIS Portal gallery as a widget  :earth_asia:
+:earth_asia: Esri slider widgets is Apostrophe CMS module to show Esri ArcGIS Portal gallery as a widget  :earth_americas:
 
 ## What's inside the box?
 
@@ -12,16 +12,18 @@
 
 After you have Apostrophe project
 
-```npm install --save esri-slider-widgets request-promise"```
+```npm install --save esri-slider-widgets request-promise```
 
-* Authenticate and uthorization
-* CRUD for property/house
-* Searching property
-* Beautiful layout
+_or_ you can clone this project and move to your lib/modules folder.
+
+```
+git clone https://github.com/dhnlr/esri-slider-widgets.git
+mv esri-slider-widget <apostrophe-project-folder>/lib/modules
+```
 
 ## Configuration
 
-In *app.js*, add the module to your configuration:
+In **app.js**, add the module to your configuration:
 
 ```
 // Content Widgets
