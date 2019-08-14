@@ -1,6 +1,6 @@
 {
   "name": "esri-slider-widgets",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Esri ArcGIS portal gallery slider for Apostrophe CMS",
   "main": "index.js",
   "homepage": "https://github.com/dhnlr/esri-slider-widgets",

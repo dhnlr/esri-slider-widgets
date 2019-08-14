@@ -10,7 +10,7 @@
   {% for arcgis in data.arcgis %}
   <div>
     <img
-      src="https://essclombok.maps.arcgis.com/sharing/rest/content/items/{{
+      src="{{ data.widget.portalURL }}/sharing/rest/content/items/{{
         arcgis.id
       }}/info/{{ arcgis.thumbnail }}"
       alt="{{ arcgis.title }}"

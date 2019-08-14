@@ -1,41 +1,39 @@
-const request = require("request-promise");
+const request = require('request-promise');
 
 module.exports = {
-  label: "Esri Portal Gallery Slider",
+  label: 'Esri Portal Gallery Slider',
   addFields: [
     {
-      name: "portalURL",
-      label: "URL of ArcGIS portal (include http://)",
-      type: "url",
+      name: 'portalURL',
+      label: 'URL of ArcGIS portal (include http://)',
+      type: 'url',
       required: true
     },
     {
-      name: "groupTitle",
-      label: "Gallery group title",
-      type: "string",
+      name: 'groupTitle',
+      label: 'Gallery group title',
+      type: 'string',
       required: true
     },
     {
-      name: "groupOwner",
-      label: "Gallery group owner",
-      type: "string",
+      name: 'groupOwner',
+      label: 'Gallery group owner',
+      type: 'string',
       required: true
     }
   ],
-  construct: function(self, options) {
+  construct: function (self, options) {
     self.on(
-      "apostrophe-pages:beforeSend",
-      "addEsriPortalGallery",
-      async function(req) {
-        // Node 8+: we can "await" anything that returns a promise, like
-        // the request-promise module does
+      'apostrophe-pages:beforeSend',
+      'addEsriPortalGallery',
+      async function (req) {
         if (req.data.home.body) {
           for (
             let index = 0;
             index < req.data.home.body.items.length;
             index++
           ) {
-            if (req.data.home.body.items[index].type == "esri-slider") {
+            if (req.data.home.body.items[index].type == 'esri-slider') {
               const groupResponse = await request(
                 `${
                   req.data.home.body.items[index].portalURL
