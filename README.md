@@ -4,7 +4,7 @@
 
 ## What's inside the box?
 
-* Beautiful gallery layout
+* Beautiful layout
 * Lightweight
 * Simple
 
@@ -53,8 +53,7 @@ Ps. Sorry for using image and other work without permission. Please, don't sue m
 
 ## Limitations
 
-- Only apply on home page
-- No prev/next button
+- Show only public services
 - Show only max 10 items
 - No support
 
