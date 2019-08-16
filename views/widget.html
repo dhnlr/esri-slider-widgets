@@ -1,9 +1,21 @@
 <style>
   .portalgallery {
-    width: 100%;
-    z-index: 999;
+    width: 97%;
+    /* z-index: 999; */
     overflow-x: scroll;
-    scrollbar-width: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    scrollbar-color: #453e48 #9b9b9b;
+  }
+  .portalgallery::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #9b9b9b;
+    border-radius: 10px;
+  }
+  .portalgallery::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #453e48;
   }
   .row__inner {
     transition: 450ms -webkit-transform;
